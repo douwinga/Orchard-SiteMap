@@ -1,5 +1,4 @@
 ﻿using System;
-using Orchard.ContentManagement;
 
 namespace WebAdvanced.Sitemap.Models {
     public class SitemapRoute {
@@ -24,7 +23,5 @@ namespace WebAdvanced.Sitemap.Models {
         public int Priority { get; set; }
 
         public DateTime? LastUpdated { get; set; }
-        
-        public ContentItem ContentItem { get; set; }
     }
 }

@@ -36,8 +36,7 @@ namespace WebAdvanced.Sitemap.Providers.Impl {
                     Priority = types[c.ContentType].Priority,
                     Title = _contentManager.GetItemMetadata(c).DisplayText,
                     UpdateFrequency = types[c.ContentType].UpdateFrequency,
-                    Url = c.As<AutoroutePart>().Path,
-                    ContentItem = c
+                    Url = c.As<AutoroutePart>().Path
                 }).AsEnumerable();
             }
 
@@ -60,7 +59,6 @@ namespace WebAdvanced.Sitemap.Providers.Impl {
                     Title = _contentManager.GetItemMetadata(c).DisplayText,
                     UpdateFrequency = types[c.ContentType].UpdateFrequency,
                     Url = c.As<AutoroutePart>().Path,
-                    ContentItem = c,
                     LastUpdated = c.Has<CommonPart>() ? c.As<CommonPart>().ModifiedUtc : null
                 }).AsEnumerable();
             }

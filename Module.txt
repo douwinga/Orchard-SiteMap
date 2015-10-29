@@ -3,7 +3,7 @@ AntiForgery: enabled
 Author: WebAdvanced
 Website: https://github.com/webadvanced/Orchard-SiteMap/wiki
 Version: 1.6.0
-OrchardVersion: 1.7
+OrchardVersion: 1.6
 Description: Provides a highly configurable XML and HTML sitemap.
 Features:
     WebAdvanced.Sitemap:
